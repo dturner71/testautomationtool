@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SignInSmokeTest" verbose="1" >
+
+<!-- already installed-->
+ 	<parameter name="appPackage" value="com.plutus.wallet.debug"></parameter>
+	<parameter name="appActivity" value="com.plutus.wallet.ui.SplashActivity"></parameter>
+ <!-- install app
+  	<parameter name="app" value="/Users/drturner/appstorage/wallet-debug.apk"></parameter>  
+ -->
+ 
+ 	<parameter name="loginName" value=""></parameter>  
+	<parameter name="platformName" value="Android"></parameter>
+	<parameter name="platformVersion" value="4.4"></parameter>
+	<parameter name="deviceName" value="0123456789ABCDEF"></parameter>
+	<parameter name="automationName" value="Appium"></parameter>
+	
+
+
+  <test name="Sign in Smoke Test">
+    <classes>
+      <class name="Scripts.mics.sandbox"/>
+    </classes>
+  </test>
+</suite>

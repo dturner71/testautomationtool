@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LoginTests" verbose="1" >
+    
+<!--  For device app installed   -->  
+    <parameter name="bundleId" value="com.getplutus.abra"></parameter> 
+    <parameter name="deviceName" value="iPod"></parameter> 
+    <parameter name="udid" value="f618b35902022492f2de96b57eeeb51eec2c4741"></parameter>
+ 
+ <!-- For device install app
+    <parameter name="udid" value="af67ab745a32caa8e1317ecfb044283de0d66756"></parameter>
+    <parameter name="app" value="/Users/davidt/appStorage/Device/Chartcube.app"></parameter>   
+    <parameter name="deviceName" value="iPhone"></parameter> 
+ -->
+ <!--  For simulator   
+   	<parameter name="app" value="/Users/davidt/appStorage/Simulator/Chartcube.app"></parameter>  
+   	<parameter name="deviceName" value="iPhone 6"></parameter> 
+ -->  	
+ 	<parameter name="loginName" value="otto.mator@chartcube.com"></parameter>
+	<parameter name="platformVersion" value="8.3"></parameter>
+	<parameter name="automationName" value="Appium"></parameter>
+	<parameter name="platformName" value="iOS"></parameter>
+	<parameter name="browserName" value=""></parameter>
+	<parameter name="VERSION" value="6.0"></parameter>
+	<parameter name="testOutputDirectory" value="./test-output"></parameter>
+	
+  <test name="Login Test">
+    <classes>
+      <class name="Scripts.iPhone.LoginTests"/>
+    </classes>
+  </test>
+</suite>

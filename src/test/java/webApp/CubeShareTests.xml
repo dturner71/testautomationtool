@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CubeShareTests" verbose="1" >
+	
+    
+<!--  For device app pre-installed -->    
+    <parameter name="bundleId" value="com.intelati.Chartcube-iphone"></parameter> 
+    <parameter name="deviceName" value="iPhone"></parameter> 
+    <parameter name="udid" value="af67ab745a32caa8e1317ecfb044283de0d66756"></parameter>
+ 
+ <!-- For device no app  
+    <parameter name="udid" value="af67ab745a32caa8e1317ecfb044283de0d66756"></parameter>
+    <parameter name="app" value="/Users/davidt/appStorage/Device/Chartcube.app"></parameter>   
+    <parameter name="deviceName" value="iPhone"></parameter> 
+-->
+ <!--  For simulator   
+   	<parameter name="app" value="/Users/davidt/appStorage/Simulator/Chartcube.app"></parameter>  
+   	<parameter name="deviceName" value="iPhone 6"></parameter> 
+ -->  	
+ 	<parameter name="loginName" value="otto.mator+10@chartcube.com"></parameter>
+	<parameter name="platformVersion" value="8.3"></parameter>
+	<parameter name="automationName" value="Appium"></parameter>
+	<parameter name="platformName" value="iOS"></parameter>
+	<parameter name="browserName" value=""></parameter>
+	<parameter name="VERSION" value="6.0"></parameter>
+	<parameter name="testOutputDirectory" value="./test-output"></parameter>
+    
+  <test name="Cube Share Tests">
+    <classes>
+      <class name="Scripts.iPhone.CubeShareTests"/>
+    </classes>
+  </test>
+</suite>

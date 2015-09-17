@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SignInSmokeTest]">
+  <parameter name="app" value="/Users/drturner/appstorage/wallet-debug.apk"/>
+  <parameter name="loginName" value=""/>
+  <parameter name="platformVersion" value="4.4"/>
+  <parameter name="automationName" value="Appium"/>
+  <parameter name="platformName" value="Android"/>
+  <parameter name="fullReset" value="true"/>
+  <parameter name="deviceName" value="0123456789ABCDEF"/>
+  <test name="Sign in Smoke Test(failed)">
+    <classes>
+      <class name="Scripts.android.CountryNotSupportedTest">
+        <methods>
+          <include name="test1_20_1"/>
+          <include name="test1_3_2"/>
+          <include name="test1_22_1"/>
+          <include name="test1_4_2"/>
+          <include name="beforeTest"/>
+          <include name="test1_8_4"/>
+          <include name="test1_5_2"/>
+        </methods>
+      </class> <!-- Scripts.android.CountryNotSupportedTest -->
+    </classes>
+  </test> <!-- Sign in Smoke Test(failed) -->
+</suite> <!-- Failed suite [SignInSmokeTest] -->

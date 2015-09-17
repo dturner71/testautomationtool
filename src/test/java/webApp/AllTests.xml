@@ -1,0 +1,71 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="AllTests" verbose="1">
+    
+<!--  For device app pre-installed -->    
+    <parameter name="bundleId" value="com.intelati.Chartcube"></parameter> 
+    <parameter name="deviceName" value="iPad"></parameter> 
+    <parameter name="udid" value="6439b9f71ecbc6ab4b3a77fd5fedf7ea8009a259"></parameter>
+ 
+ <!-- For device no app  
+    <parameter name="udid" value="af67ab745a32caa8e1317ecfb044283de0d66756"></parameter>
+    <parameter name="app" value="/Users/davidt/appStorage/Device/Chartcube.app"></parameter>   
+    <parameter name="deviceName" value="iPhone"></parameter> 
+-->
+ <!--  For simulator   
+   	<parameter name="app" value="/Users/davidt/appStorage/Simulator/Chartcube.app"></parameter>  
+   	<parameter name="deviceName" value="iPad 6"></parameter> 
+ -->  
+ 	<parameter name="loginName" value="otto.mator@chartcube.com"></parameter>  
+	<parameter name="automationName" value="Appium"></parameter>
+	<parameter name="platformName" value="iOS"></parameter>
+	<parameter name="browserName" value=""></parameter>
+	<parameter name="VERSION" value="6.0"></parameter>
+ 
+	<test name="Sing in Smoke Test">
+		<classes>
+      <class name="Scripts.iPad.LoginTests"/>
+		</classes>
+	</test>
+
+	<test name="Help page Smoke Test">
+		<classes>
+  <class name="Scripts.iPad.HelpTests"/>
+		</classes>
+	</test>
+
+	<test name="Cube View Smoke Test">
+		<classes>
+			<class name="Scripts.iPad.CubeViewTests" />
+		</classes>
+	</test>
+
+	<test name="Home Page Smoke Test">
+		<classes>
+			<class name="Scripts.iPad.HomePageTests" />
+		</classes>
+	</test>
+<!-- need to rethink this test -->
+	<test name="Import Chartcube Test">
+		<classes>
+			<class name="Scripts.iPad.ImportChartCubeTest" />
+		</classes>
+	</test>
+
+		<test name="Swipe Gestures Test">
+		<classes>
+			<class name="Scripts.iPad.SwipeGesturesTests" />
+		</classes>
+	</test>
+	<test name="Settings Test Chartcube Test">
+		<classes>
+			<class name="Scripts.iPad.SettingsTest" />
+		</classes>
+	</test>
+	<test name="Data Import Test">
+		<classes>
+			<class name="Scripts.iPad.DataImportTest" />
+		</classes>
+	</test>
+
+</suite>
