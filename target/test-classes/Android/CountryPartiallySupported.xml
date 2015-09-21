@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SignInSmokeTest" verbose="1" >
+
+<!-- 
+		capabilities.setCapability("appium-version", "1.0");
+		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("platformVersion", "4.4");
+		capabilities.setCapability("deviceName", "0123456789ABCDEF");
+		capabilities.setCapability("app", "/Users/drturner/appstorage/wallet-debug.apk");
+		capabilities.setCapability("appPackage", "com.plutus.wallet.debug");
+		capabilities.setCapability("appActivity", "com.plutus.wallet");
+		<parameter name="bundleId" value="com.plutus.wallet.debug"></parameter> 
+		-->
+ 
+ 	<parameter name="loginName" value=""></parameter>  
+ 	<parameter name="fullReset" value="true"></parameter>  
+ 	<parameter name="app" value="/Users/drturner/appstorage/wallet-debug.apk"></parameter>  
+ 	<!-- already installed
+ 	<parameter name="appPackage" value="com.plutus.wallet.debug"></parameter>
+	<parameter name="appActivity" value="com.plutus.wallet.ui.SplashActivity"></parameter>
+	-->
+	<parameter name="platformName" value="Android"></parameter>
+	<parameter name="platformVersion" value="4.4"></parameter>
+	<parameter name="deviceName" value="0123456789ABCDEF"></parameter>
+	<parameter name="automationName" value="Appium"></parameter>
+	
+
+
+  <test name="Sign in Smoke Test">
+    <classes>
+      <class name="Scripts.android.CountryPartiallySupported"/>
+    </classes>
+  </test>
+</suite>

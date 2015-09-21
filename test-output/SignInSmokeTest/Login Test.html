@@ -1,0 +1,242 @@
+<html>
+<head>
+<title>TestNG:  Login Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 21 09:44:04 PDT 2015</td>
+</tr>
+<tr><td>Total time:</td><td>64 seconds (64468 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Scripts.android.LoginTests.test1_2_1()'><b>test1_2_1</b><br>Test class: Scripts.android.LoginTests<br/>
+<a href="#Output-93199773" onClick='toggleBox("Output-93199773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-93199773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-93199773">
+----------<br/>
+09/21/2015 - 09:44 AM<br/>
+1.2.1: Verfiy Onboading screen loads<br/>
+----------<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/----------_1.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/----------_1.png" style="width:160px;height:266px"><br/>
+</a><br/>
+Setting wait time to 60<br/>
+PASS: Found Onboarding screen<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/PASS: Found Onboarding screen_0.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/PASS: Found Onboarding screen_0.png" style="width:160px;height:266px"><br/>
+</a><br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>Scripts.android.LoginTests@276438c9</td></tr>
+<tr>
+<td title='Scripts.android.LoginTests.test1_3_1()'><b>test1_3_1</b><br>Test class: Scripts.android.LoginTests<br/>
+<a href="#Output-2113604623" onClick='toggleBox("Output-2113604623", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2113604623" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2113604623">
+----------<br/>
+09/21/2015 - 09:44 AM<br/>
+1.3.1:Verify Next button functionality<br/>
+----------<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/----------_2.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/----------_2.png" style="width:160px;height:266px"><br/>
+</a><br/>
+Sending tap to NEXT button<br/>
+PASS: Found Page two<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/PASS: Found Page two_0.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/PASS: Found Page two_0.png" style="width:160px;height:266px"><br/>
+</a><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Scripts.android.LoginTests@276438c9</td></tr>
+<tr>
+<td title='Scripts.android.LoginTests.test1_3_2()'><b>test1_3_2</b><br>Test class: Scripts.android.LoginTests<br/>
+<a href="#Output-1569754439" onClick='toggleBox("Output-1569754439", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1569754439" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1569754439">
+Speed to fast, slowing down to .5 seconds<br/>
+swipeing from (456, 400) To (1, 400) With speed 500<br/>
+PASS: Found Page two<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/PASS: Found Page two_1.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/PASS: Found Page two_1.png" style="width:160px;height:266px"><br/>
+</a><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Scripts.android.LoginTests@276438c9</td></tr>
+<tr>
+<td title='Scripts.android.LoginTests.test1_4_1()'><b>test1_4_1</b><br>Test class: Scripts.android.LoginTests<br/>
+<a href="#Output-347978868" onClick='toggleBox("Output-347978868", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-347978868" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-347978868">
+----------<br/>
+09/21/2015 - 09:44 AM<br/>
+1.4.1:Verify Next button functionality<br/>
+----------<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/----------_3.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/----------_3.png" style="width:160px;height:266px"><br/>
+</a><br/>
+Sending tap to NEXT button<br/>
+PASS: Found Page Three<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/PASS: Found Page Three_0.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/PASS: Found Page Three_0.png" style="width:160px;height:266px"><br/>
+</a><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Scripts.android.LoginTests@276438c9</td></tr>
+<tr>
+<td title='Scripts.android.LoginTests.test1_4_2()'><b>test1_4_2</b><br>Test class: Scripts.android.LoginTests<br/>
+<a href="#Output-304354378" onClick='toggleBox("Output-304354378", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-304354378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-304354378">
+----------<br/>
+09/21/2015 - 09:44 AM<br/>
+1.4.2:Verify  Swip Left functionality<br/>
+----------<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/----------_5.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/----------_5.png" style="width:160px;height:266px"><br/>
+</a><br/>
+Speed to fast, slowing down to .5 seconds<br/>
+swipeing from (456, 400) To (1, 400) With speed 500<br/>
+PASS: Found Page Three<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/PASS: Found Page Three_1.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/PASS: Found Page Three_1.png" style="width:160px;height:266px"><br/>
+</a><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Scripts.android.LoginTests@276438c9</td></tr>
+<tr>
+<td title='Scripts.android.LoginTests.test1_5_1()'><b>test1_5_1</b><br>Test class: Scripts.android.LoginTests<br/>
+<a href="#Output-1351478315" onClick='toggleBox("Output-1351478315", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1351478315" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1351478315">
+----------<br/>
+09/21/2015 - 09:44 AM<br/>
+1.5.2:Verify  Swip right functionality<br/>
+----------<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/----------_4.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/----------_4.png" style="width:160px;height:266px"><br/>
+</a><br/>
+Speed to fast, slowing down to .5 seconds<br/>
+swipeing from (24, 400) To (479, 400) With speed 500<br/>
+PASS: Found Onboarding screen<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/PASS: Found Onboarding screen_1.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/PASS: Found Onboarding screen_1.png" style="width:160px;height:266px"><br/>
+</a><br/>
+Speed to fast, slowing down to .5 seconds<br/>
+swipeing from (24, 400) To (479, 400) With speed 500<br/>
+PASS: Found Onboarding screen<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/PASS: Found Onboarding screen_2.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/PASS: Found Onboarding screen_2.png" style="width:160px;height:266px"><br/>
+</a><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Scripts.android.LoginTests@276438c9</td></tr>
+<tr>
+<td title='Scripts.android.LoginTests.test1_5_2()'><b>test1_5_2</b><br>Test class: Scripts.android.LoginTests<br/>
+<a href="#Output-795321555" onClick='toggleBox("Output-795321555", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-795321555" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-795321555">
+----------<br/>
+09/21/2015 - 09:45 AM<br/>
+1.5.2:Verify Get Started button functionality<br/>
+----------<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/----------_6.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/----------_6.png" style="width:160px;height:266px"><br/>
+</a><br/>
+Sending tap to GET STARTED button<br/>
+PASS: Found country select screen<br/>
+<a href="/tmp/screenShot/2015_09_21/0944/PASS: Found country select screen_0.png" target = "_blank"><br/>
+<img src="/tmp/screenShot/2015_09_21/0944/PASS: Found country select screen_0.png" style="width:160px;height:266px"><br/>
+</a><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Scripts.android.LoginTests@276438c9</td></tr>
+</table><p>
+</body>
+</html>
