@@ -755,8 +755,8 @@ public class Library  {
 		Dimension objectSize = object.getSize();
 		Point loc = object.getLocation();
 		Point lowerRight = new Point(objectSize.width  ,objectSize.height );
-		Point start = new Point (lowerRight.x/2+ loc.x,lowerRight.y/2+ loc.y);
-		Point end = new Point(lowerRight.x/2+ loc.x,lowerRight.y/2+ loc.y);
+		Point start = new Point(lowerRight.x/2+ loc.x,lowerRight.y/2+ loc.y);
+		Point end =   new Point(lowerRight.x/2+ loc.x,lowerRight.y/2+ loc.y);
 
 		switch (dir) {
 		case up:
@@ -934,7 +934,7 @@ public class Library  {
 		omnidriver.changeField(element);
 	}
 	public void quit(){
-
+omnidriver.quit();
 	}
 	public void deleteAllGmail(){
 

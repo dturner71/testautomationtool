@@ -3,6 +3,7 @@ package Scripts.android;
 import java.lang.reflect.Method;
 import lib.iPadLibrary;
 import objectSelector.Directions.direction;
+import screen.countryScreen;
 import screen.loginScreen;
 
 import org.testng.ITestContext;
@@ -35,7 +36,7 @@ public class LoginTests extends iPadLibrary{
 	}
 	@AfterTest
 	public void aftertest (){
-
+		quit();
 	}
 	@Test(priority=1)
 	public void test1_2_1() {
@@ -82,6 +83,6 @@ public class LoginTests extends iPadLibrary{
 	public void test1_5_2() {
 		testTitle("1.5.2:Verify Get Started button functionality");
 		singleTapWebElement(loginScreen.getStarted);
-		evaluateTest(doesWebElementExist(loginScreen.countrySelectScreen), "Found country select screen");
+		evaluateTest(doesWebElementExist(countryScreen.countrySelectScreen), "Found country select screen");
 	}
 }

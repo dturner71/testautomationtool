@@ -5,7 +5,9 @@ import java.util.List;
 
 import lib.iPadLibrary;
 import lib.mics;
+import objectSelector.ObjectTypes.SelectorType;
 import screen.loginScreen;
+import screen.numberProxy;
 
 import org.openqa.selenium.WebElement;
 import org.testng.ITestContext;
@@ -23,28 +25,30 @@ public class sandbox extends mics{
 	}
 	@BeforeTest
 	public void beforeTest(ITestContext context){
-		createDriver(context,true,false);
+		createDriver(context,false,true);
 		setupEnveroment(context);
-	
+
 	}
 	private String 	 testName;
 	@BeforeMethod
 	public void beforeMethod(Method method){
 		testName = method.getName(); 
-		setMoble(true);
+		setMoble(false);
 		setWaitTime(1);
 		//testName +":
 	}
 	@AfterTest
 	public void aftertest (){
-		
+		closeAll();
 	}
 	@Test(priority=1)
 	public void test01() {
 		log("Starting tests");
-		setWaitTime(60);
-		List<WebElement> next = collectWebElements("android.widget.Button");
-		dumpAll(next,true);
+		loginNumberProxy();
+		setMoble(false);
+		String numbers = getCode();
+		log(numbers);
+		
 	}
 
 }

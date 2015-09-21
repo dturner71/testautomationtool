@@ -7,20 +7,101 @@
   <parameter name="automationName" value="Appium"/>
   <parameter name="platformName" value="Android"/>
   <parameter name="fullReset" value="true"/>
-  <parameter name="deviceName" value="0123456789ABCDEF"/>
-  <test name="Sign in Smoke Test(failed)">
+  <parameter name="deviceName" value="26e7b8e4"/>
+  <test name="Country Not Supported Test Test(failed)">
     <classes>
       <class name="Scripts.android.CountryNotSupportedTest">
         <methods>
           <include name="test1_20_1"/>
-          <include name="test1_3_2"/>
           <include name="test1_22_1"/>
-          <include name="test1_4_2"/>
           <include name="beforeTest"/>
           <include name="test1_8_4"/>
-          <include name="test1_5_2"/>
         </methods>
       </class> <!-- Scripts.android.CountryNotSupportedTest -->
+      <class name="Scripts.android.LoginTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="aftertest"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- Scripts.android.LoginTests -->
+      <class name="Scripts.android.CountryPartiallySupported">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Scripts.android.CountryPartiallySupported -->
+      <class name="Scripts.android.CountrySupportedTest">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Scripts.android.CountrySupportedTest -->
     </classes>
-  </test> <!-- Sign in Smoke Test(failed) -->
+  </test> <!-- Country Not Supported Test Test(failed) -->
+  <test name="Country Partially Supported Test(failed)">
+    <classes>
+      <class name="Scripts.android.CountryNotSupportedTest">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Scripts.android.CountryNotSupportedTest -->
+      <class name="Scripts.android.LoginTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="aftertest"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- Scripts.android.LoginTests -->
+      <class name="Scripts.android.CountryPartiallySupported">
+        <methods>
+          <include name="test1_10_1"/>
+          <include name="test1_12_1"/>
+          <include name="test1_11_1"/>
+          <include name="test1_13_1"/>
+          <include name="test1_8_6"/>
+          <include name="beforeTest"/>
+          <include name="test1_9a_2"/>
+        </methods>
+      </class> <!-- Scripts.android.CountryPartiallySupported -->
+      <class name="Scripts.android.CountrySupportedTest">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Scripts.android.CountrySupportedTest -->
+    </classes>
+  </test> <!-- Country Partially Supported Test(failed) -->
+  <test name="Country Supported Test Test(failed)">
+    <classes>
+      <class name="Scripts.android.CountryNotSupportedTest">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Scripts.android.CountryNotSupportedTest -->
+      <class name="Scripts.android.LoginTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="aftertest"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- Scripts.android.LoginTests -->
+      <class name="Scripts.android.CountryPartiallySupported">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Scripts.android.CountryPartiallySupported -->
+      <class name="Scripts.android.CountrySupportedTest">
+        <methods>
+          <include name="test1_10_3"/>
+          <include name="test1_11_2"/>
+          <include name="test1_10_2"/>
+          <include name="test1_11_1"/>
+          <include name="test1_8_5"/>
+          <include name="beforeTest"/>
+          <include name="test1_9a_2"/>
+        </methods>
+      </class> <!-- Scripts.android.CountrySupportedTest -->
+    </classes>
+  </test> <!-- Country Supported Test Test(failed) -->
 </suite> <!-- Failed suite [SignInSmokeTest] -->

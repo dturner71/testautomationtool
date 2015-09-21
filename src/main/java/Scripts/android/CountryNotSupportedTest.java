@@ -40,7 +40,7 @@ public class CountryNotSupportedTest extends AndroidLibrary{
 	}
 	@AfterTest
 	public void aftertest (){
-
+		quit();
 	}
 	@Test(priority=1)
 	public void test1_8_4() {
